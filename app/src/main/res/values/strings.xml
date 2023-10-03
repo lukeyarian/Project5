@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Project5</string>
+    <string name="translated_text_will_appear_here">Translated Text will appear here</string>
+    <string name="translation">Translation:</string>
+    <string name="source_language">Source Language:</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="german">German</string>
+    <string name="englisht">English</string>
+    <string name="spanisht">Spanish</string>
+    <string name="germant">German</string>
 </resources>
