@@ -4,7 +4,6 @@ import androidx.lifecycle.ViewModel
 import com.google.mlkit.nl.translate.Translation
 import com.google.mlkit.nl.translate.TranslateLanguage
 import com.google.mlkit.nl.translate.TranslatorOptions
-
 class TranslationViewModel : ViewModel() {
     val translatedText = MutableLiveData<String>()
     fun translate(text: String, inputLanguage: String, outputLanguage: String) {

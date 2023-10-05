@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import com.example.project5.databinding.ActivityMainBinding
 import androidx.lifecycle.Observer
-
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val translationViewModel: TranslationViewModel by viewModels()

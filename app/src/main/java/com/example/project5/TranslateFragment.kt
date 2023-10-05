@@ -11,7 +11,6 @@ import android.text.TextWatcher
 import androidx.fragment.app.viewModels
 import com.example.project5.databinding.TranslateFragmentBinding
 import com.example.project5.databinding.ActivityMainBinding
-
 class TranslateFragment : Fragment() {
     private val translationViewModel: TranslationViewModel by activityViewModels()
     private var _binding: TranslateFragmentBinding? = null
@@ -42,9 +41,5 @@ class TranslateFragment : Fragment() {
             val mainBinding = ActivityMainBinding.bind(view.rootView)
             mainBinding.translatedText.text = translatedText
         })
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

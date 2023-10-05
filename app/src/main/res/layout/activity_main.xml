@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
@@ -9,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -18,7 +20,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Source Language:"
+                android:text="@string/source_language"
                 android:textSize="16sp" />
             <RadioGroup
                 android:id="@+id/inputLanguageGroup"
@@ -30,19 +32,19 @@
                     android:id="@+id/englishInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="English" />
+                    android:text="@string/english" />
 
                 <RadioButton
                     android:id="@+id/spanishInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Spanish" />
+                    android:text="@string/spanish" />
 
                 <RadioButton
                     android:id="@+id/germanInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="German" />
+                    android:text="@string/german" />
             </RadioGroup>
         </LinearLayout>
         <LinearLayout
@@ -53,7 +55,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Translation:"
+                android:text="@string/translation"
                 android:textSize="16sp" />
             <RadioGroup
                 android:id="@+id/outputLanguageGroup"
@@ -65,19 +67,19 @@
                     android:id="@+id/englishOutput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="English" />
+                    android:text="@string/english_Translated" />
 
                 <RadioButton
                     android:id="@+id/spanishOutput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Spanish" />
+                    android:text="@string/spanish_Translated" />
 
                 <RadioButton
                     android:id="@+id/germanOutput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="German" />
+                    android:text="@string/german_Translated" />
             </RadioGroup>
         </LinearLayout>
     </LinearLayout>
@@ -88,9 +90,11 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/translated_text_will_appear_here" />
-    <FrameLayout
+    <fragment
         android:id="@+id/fragmentContainer"
+        android:name="com.example.project5.TranslateFragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_input" />
 </LinearLayout>
