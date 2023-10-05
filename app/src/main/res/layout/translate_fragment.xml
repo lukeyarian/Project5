@@ -9,5 +9,7 @@
         android:id="@+id/editTextInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Write something" />
+        android:hint="@string/write_something"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
 </LinearLayout>

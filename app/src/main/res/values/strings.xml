@@ -9,4 +9,5 @@
     <string name="englisht">English</string>
     <string name="spanisht">Spanish</string>
     <string name="germant">German</string>
+    <string name="write_something">Write something</string>
 </resources>
